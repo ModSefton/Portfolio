@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flint Nacor - Aspiring Virtual Assistant | BSIT Student Portfolio">
+    <title>Flint Nacor - Virtual Assistant Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <button class="nav-logo" onclick="scrollToTop()">FN</button>
+            
+            <div class="nav-menu" id="navMenu">
+                <button class="nav-link" onclick="scrollToSection('about')">About</button>
+                <button class="nav-link" onclick="scrollToSection('skills')">Skills</button>
+                <button class="nav-link" onclick="scrollToSection('projects')">Projects</button>
+                <button class="nav-link" onclick="scrollToSection('experience')">Experience</button>
+                <button class="nav-link" onclick="scrollToSection('contact')">Contact</button>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars" id="menuIcon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="mobile-nav-link" onclick="scrollToSection('about')">About</button>
+            <button class="mobile-nav-link" onclick="scrollToSection('skills')">Skills</button>
+            <button class="mobile-nav-link" onclick="scrollToSection('projects')">Projects</button>
+            <button class="mobile-nav-link" onclick="scrollToSection('experience')">Experience</button>
+            <button class="mobile-nav-link" onclick="scrollToSection('contact')">Contact</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content fade-in">
+                    <span class="availability-badge">Available for Remote Work</span>
+                    
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-primary">Flint Nacor</span>
+                    </h1>
+                    
+                    <p class="hero-tagline">
+                        Aspiring Virtual Assistant | BSIT Student | Tech-Savvy & Reliable
+                    </p>
+                    
+                    <p class="hero-description">
+                        Based in San Fernando City, Pampanga, Philippines, ready to help you streamline your workflow and boost productivity through efficient virtual assistance.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                            <i class="fas fa-envelope"></i>
+                            Contact Me
+                        </button>
+                        <button class="btn btn-secondary" onclick="window.open('/resume.pdf', '_blank')">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </button>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/flintnacor" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/flintnacor" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com/flintnacor" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/639469499727" target="_blank" class="social-icon" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-container fade-in-delay">
+                    <div class="image-wrapper">
+                        <div class="image-bg"></div>
+                        <img src="https://i.ibb.co/R4Y42pPn/ME.png" alt="Flint Nacor" class="hero-image">
+                        <span class="ready-badge">Ready to Work!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">
+                        About <span class="text-primary">Me</span>
+                    </h2>
+                    <p class="about-bio">
+                        Dedicated BSIT student passionate about technology and helping others succeed. Skilled in web development, online tools, and efficient virtual assistance. Eager to support busy professionals with scheduling, research, content management, and tech support. Based in Angeles City, Pampanga, Philippines. Available for remote work.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon bg-blue">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div>
+                                <h4 class="feature-title">Goal-Oriented</h4>
+                                <p class="feature-text">Focused on delivering high-quality results and exceeding client expectations through meticulous attention to detail.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon bg-green">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div>
+                                <h4 class="feature-title">Client-Centered</h4>
+                                <p class="feature-text">Building long-term relationships by understanding your unique needs and providing personalized support.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon bg-purple">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div>
+                                <h4 class="feature-title">Fast & Efficient</h4>
+                                <p class="feature-text">Leveraging technology and organizational skills to streamline workflows and boost your productivity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card bg-blue-gradient">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Users Helped</div>
+                        <div class="stat-sublabel">as Community Moderator</div>
+                    </div>
+                    <div class="stat-card bg-green-gradient">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                        <div class="stat-sublabel">from user feedback</div>
+                    </div>
+                    <div class="stat-card bg-purple-gradient">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                        <div class="stat-sublabel">in online platforms</div>
+                    </div>
+                    <div class="stat-card bg-orange-gradient">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Availability</div>
+                        <div class="stat-sublabel">flexible schedule</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Skills & <span class="text-primary">Technologies</span>
+                </h2>
+                <p class="section-subtitle">
+                    A comprehensive toolkit combining technical proficiency with essential virtual assistant capabilities
+                </p>
+            </div>
+
+            <div id="skillsContainer"></div>
+
+            <div class="continuous-learner">
+                <h4 class="learner-title">Continuous Learner</h4>
+                <p class="learner-text">
+                    Currently expanding my skill set through online courses and hands-on projects. Always eager to learn new tools and technologies to better serve clients and stay ahead in the virtual assistance field.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Featured <span class="text-primary">Projects</span>
+                </h2>
+                <p class="section-subtitle">
+                    Practical applications showcasing my technical skills and problem-solving abilities
+                </p>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <section class="experience-section" id="experience">
+        <div class="container-narrow">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Experience & <span class="text-primary">Education</span>
+                </h2>
+                <p class="section-subtitle">
+                    Building skills through academic excellence and hands-on community management experience
+                </p>
+            </div>
+
+            <div class="timeline" id="timeline"></div>
+
+            <div class="experience-note">
+                <h4 class="note-title">Building Skills Through Projects & Extracurriculars</h4>
+                <p class="note-text">
+                    While I don't have traditional work experience yet, I've been actively developing practical skills through community moderation, personal projects, and my BSIT coursework. I'm eager to apply this knowledge and continue learning in a professional virtual assistant role.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Get In <span class="text-primary">Touch</span>
+                </h2>
+                <p class="section-subtitle">
+                    Ready to collaborate? Let's discuss how I can support your business goals
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3 class="contact-title">Contact Information</h3>
+                        <p class="contact-text">
+                            Feel free to reach out through any of these channels. I typically respond within 24 hours.
+                        </p>
+                    </div>
+
+                    <div class="contact-cards">
+                        <div class="contact-card border-blue">
+                            <div class="contact-icon bg-blue">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="contact-card-title">Email</h4>
+                                <a href="mailto:fj321nacor@email.com" class="contact-link">fj321nacor@email.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card border-green">
+                            <div class="contact-icon bg-green">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="contact-card-title">Phone</h4>
+                                <a href="tel:+639469499727" class="contact-link">+63 946 949 9727</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card border-purple">
+                            <div class="contact-icon bg-purple">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="contact-card-title">Location</h4>
+                                <p class="contact-location">San Fernando City, Pampanga, Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h4 class="social-title">Connect on Social Media</h4>
+                        <div class="social-links-large">
+                            <a href="https://linkedin.com/in/flintnacor" target="_blank" class="social-icon-large" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/flintnacor" target="_blank" class="social-icon-large" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://instagram.com/flintnacor" target="_blank" class="social-icon-large" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/639469499727" target="_blank" class="social-icon-large bg-whatsapp" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61825.79436395673!2d120.68445!3d15.03425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f7c8b0b0b0b1%3A0x5a8f7d3f0e3a1234!2sSan%20Fernando%2C%20Pampanga%2C%20Philippines!5e0!3m2!1sen!2sus!4v1234567890123"
+                            width="100%"
+                            height="250"
+                            style="border:0; border-radius: 0.75rem;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="San Fernando City, Pampanga"
+                        ></iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <div class="form-card">
+                        <h3 class="form-title">Send a Message</h3>
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Your Name *</label>
+                                <input type="text" id="name" name="name" required class="form-input" placeholder="John Doe">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Your Email *</label>
+                                <input type="email" id="email" name="email" required class="form-input" placeholder="john@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Message *</label>
+                                <textarea id="message" name="message" required class="form-textarea" placeholder="Tell me about your project or how I can help you..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                                <i class="fas fa-paper-plane"></i>
+                                <span id="submitText">Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                © 2025 Flint Nacor. All rights reserved.
+            </p>
+            <p class="footer-subtext">
+                Built with HTML, CSS & JavaScript
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTopBtn" onclick="scrollToTop()" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle toast-icon"></i>
+            <div>
+                <div class="toast-title">Message Sent Successfully!</div>
+                <div class="toast-message">Thank you for reaching out. I'll get back to you soon.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
