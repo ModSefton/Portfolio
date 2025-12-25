@@ -68,8 +68,8 @@ const mockData = {
             fullDescription: "Built using modern HTML5, CSS3 with Flexbox/Grid, and vanilla JavaScript. Features smooth scrolling navigation, interactive skill cards, project modals, and a contact form. Optimized for all devices with mobile-first design approach.",
             image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80",
             technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-            liveDemo: "https://github.com/ModSefton/Portfolio",
-            github: "https://modsefton.github.io/Portfolio",
+            liveDemo: "https://modsefton.github.io/Portfolio",
+            github: "https://github.com/ModSefton/Portfolio",
             features: [
                 "Smooth scroll navigation",
                 "Interactive animations",
@@ -488,4 +488,5 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Portfolio loaded successfully!');
 
 });
+
 
