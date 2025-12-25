@@ -205,14 +205,28 @@ function handleScroll() {
         backToTopBtn.classList.remove('visible');
     }
     
-    // Add scroll animations
+    // FIXED: Reset + Re-animate EVERY scroll
     const elements = document.querySelectorAll('.skill-card, .project-card, .timeline-item, .stat-card');
     elements.forEach(element => {
         const rect = element.getBoundingClientRect();
         const isVisible = rect.top < window.innerHeight - 100;
+        
         if (isVisible) {
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
+            // 1. QUICK RESET (invisible)
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            
+            // 2. ANIMATE after browser repaints
+            requestAnimationFrame(() => {
+                element.style.transition = 'all 0.6s ease-out';
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            });
+        } else {
+            // Reset when scrolling up past (prevents glitches)
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'none';
         }
     });
 }
@@ -488,5 +502,6 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Portfolio loaded successfully!');
 
 });
+
 
 
