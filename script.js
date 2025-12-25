@@ -431,16 +431,25 @@ function handleFormSubmit(event) {
     submitBtn.disabled = true;
     submitText.innerHTML = '<i class=\"fas fa-spinner fa-spin\"></i> Sending...';
     
-    // Simulate form submission
-    setTimeout(() => {
-        // Show toast
-        showToast();
-        
-        // Reset form
-        form.reset();
-        submitBtn.disabled = false;
-        submitText.innerHTML = '<i class=\"fas fa-paper-plane\"></i> Send Message';
-    }, 1500);
+    // Send via EmailJS
+     emailjs
+    .sendForm("service_s9b4ixh", "template_1ps6ire", form)
+    .then(function () {
+    // Show toast on success
+      showToast();
+
+    // Reset form
+      form.reset();
+    })
+    .catch(function (error) {
+      console.error("EmailJS error:", error);
+      alert("Failed to send message. Please try again.");
+    })
+    .finally(function () {
+      submitBtn.disabled = false;
+      submitText.innerHTML =
+        '<i class="fas fa-paper-plane"></i> Send Message';
+    });
 }
 
 function showToast() {
@@ -477,4 +486,5 @@ document.addEventListener('DOMContentLoaded', () => {
     handleScroll();
     
     console.log('Portfolio loaded successfully!');
+
 });
