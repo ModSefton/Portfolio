@@ -14,7 +14,3 @@ This is a modern, fully responsive personal portfolio website.
 - Mobile-first approach with CSS media queries
 - Optimized for desktop, tablet (1024px), mobile (768px, 480px)
 - Touch-friendly buttons and swipeable modals
-
----
-
-**© 2025 Flint Nacor. Built with HTML, CSS & JavaScript**
