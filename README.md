@@ -10,14 +10,6 @@ This is a modern, fully responsive personal portfolio website for Flint Nacor, a
 - Timeline for education and experience (BSIT student, Brainly.ph Senior Moderator)
 - Responsive design optimized for all devices with CSS Grid and Flexbox
 
-## 🛠 Technologies Used
-| Category | Skills |
-|----------|--------|
-| **Frontend** | HTML5, CSS3 (Flexbox/Grid), Vanilla JavaScript |
-| **Tools** | Google Workspace, Microsoft Office, Slack, Trello, Canva (Advanced) |
-| **VA Skills** | Data Entry, Email Management, Social Media Scheduling, Calendar Management (Advanced/Intermediate) |
-| **Styling** | Custom CSS variables, Tailwind-inspired design system, Font Awesome icons, Google Fonts (Inter, Poppins) |
-
 ## 📲 Responsive Design
 - Mobile-first approach with CSS media queries
 - Optimized for desktop, tablet (1024px), mobile (768px, 480px)
